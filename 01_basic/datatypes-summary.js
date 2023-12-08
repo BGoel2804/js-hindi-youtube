@@ -38,3 +38,29 @@ const myFunction = function(){
 }
 
 console.log(typeof anotherId)
+
+
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// stack (Primitive)(receive copy of number), Heap(Non-Primitive)(receive reference of original value) 
+
+let myYoutubename = "bhumika"
+let anothername = myYoutubename
+anothername = "Bhumika"
+
+console.log(anothername);
+console.log(myYoutubename);
+
+let userOne = {
+    email: "useer@google.com",
+    upi: "user@okyp"
+}
+
+let userTwo = userOne
+
+userTwo.email = "bhumika@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
